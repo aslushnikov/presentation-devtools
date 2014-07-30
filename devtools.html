@@ -31,7 +31,7 @@
     <ul>
         <li>Latest & Greatest DevTools
         <li>эксперименты WebPlatform'ы
-        <li>устанавливается side-by-side с обычным хромом
+        <li>устанавливается параллельно с обычным хромом
     </ul>
 </div>
 
@@ -47,23 +47,62 @@
     <div class="marker"></div>
 </div>
 
+<div id="device-mode" class="step" data-x=6000 data-y=2000 data-scale=2>
+    <img class="icon" src="/device-mode-icon.png"></img>
+    <span>Device Mode</span>
+</div>
 
 <div id="mobile-world" class="slide step">
-    <q>Mobile First</q>
-    <img src="/dock-to-right.png"/ width="100%">
-    <div class="marker"></div>
+    <q>Device mode</q>
+    <ul>
+        <li>Эмуляция размеров экрана
+        <li>Эмуляция интернет-соединения
+        <li>CSS-breakpoints / Media Queries
+    </ul>
 </div>
 
-<div id="device-mode" class="step" data-x=6000 data-y=2000 data-scale=2>
-   <div>Device Mode</div>
+<div id="workspace" class="step" data-x=7500 data-y=4000 data-scale=2>
+    <div class="workspace-title">Workspace</div>
 </div>
 
+<div id="workspace-summary" class="step slide">
+    <q>Workspace - это:</q>
+    <ul>
+        <li>редактор файлов
+        <li>поиск с индексированием
+        <li>умный "Goto File" диалог 
+    </ul>
+</div>
+
+<div id="theend" class="step slide">
+    <div class="content">
+        <div class="name">Андрей Лушников</div>
+        <div class="credentials">
+            <div class="twitter"><img src="/twitter.png"></img>@aslushnikov</div>
+            <div class="email"><img src="/gmail.png"></img>lushnikov@google.com</div>
+        </div>
+    </div>
+</div>
 
 <script>
 var slides = document.querySelectorAll(".slide");
-for (var i = 0; i < slides.length; ++i) {
-    slides[i].setAttribute("data-x", 1500 * i);
+var x = 0;
+for (var i = 0; i < 5; ++i) {
+    slides[i].setAttribute("data-x", x);
     slides[i].setAttribute("data-y", 0);
+    x += 1500;
+}
+
+for (var i = 5; i < 6; ++i) {
+    slides[i].setAttribute("data-x", x);
+    slides[i].setAttribute("data-y", 2000);
+    x += 1500;
+}
+
+for (var i = 6; i < slides.length; ++i) {
+    slides[i].setAttribute("data-x", x);
+    slides[i].setAttribute("data-y", 4000);
+    x += 1500;
 }
 
 </script>
