@@ -152,6 +152,21 @@ li::before {
     box-sizing: content-box;
 }
 
+.marker {
+    opacity: 0;
+}
+
+.present .marker {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+.past .marker {
+    transition: opacity .25s ease-in-out;
+    transition-delay: 1s;
+}
+
 #dock-to-right q {
     margin: 25px;
 }
