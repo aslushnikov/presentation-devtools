@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta name="viewport" content="width=1024"/>
+    <meta charset="utf-8"/>
+    <title>DevTools</title>
+    <link rel="stylesheet" href="/devtools.css"/>
+</head>
+<body>
+<div id="impress">
+
+<div id="intro" class="slide step">
+    <img class="chrome-logo" src="chrome-logo.jpg"/>
+    <h1>Chome Developer Tools</h1>
+    <div class="credentials">
+        <div class="twitter">@aslushnikov</div>
+        <div class="email">lushnikov@google.com</div>
+    </div>
+</div>
+
+<div id="agenda" class="slide step">
+    <q>Агенда</q>
+    <ul>
+        <li>Tips'n'tricks <!-- canary, disable cache, dock to right -->
+        <li>Device mode
+        <li>Workspace
+    </ul>
+</div>
+
+<div id="chrome-canary" class="slide step">
+    <q>Tip 1: Chrome Canary</q>
+    <ul>
+        <li>Latest & Greatest DevTools
+        <li>эксперименты WebPlatform'ы
+        <li>устанавливается side-by-side с обычным хромом
+    </ul>
+</div>
+
+<div id="disable-cache" class="slide step">
+    <q>Tip 2: Disable Cache</q>
+    <img src="/devtools-disable-cache.png"></img>
+    <div class="marker"></div>
+</div>
+
+<div id="dock-to-right" class="slide step">
+    <q>Tip 3: Dock To Right</q>
+    <img src="/dock-to-right.png"/ width="100%">
+    <div class="marker"></div>
+</div>
+
+
+<div id="mobile-world" class="slide step">
+    <q>Mobile First</q>
+    <img src="/dock-to-right.png"/ width="100%">
+    <div class="marker"></div>
+</div>
+
+<div id="device-mode" class="step" data-x=6000 data-y=2000 data-scale=2>
+   <div>Device Mode</div>
+</div>
+
+
+<script>
+var slides = document.querySelectorAll(".slide");
+for (var i = 0; i < slides.length; ++i) {
+    slides[i].setAttribute("data-x", 1500 * i);
+    slides[i].setAttribute("data-y", 0);
+}
+
+</script>
+
+<script src="/impress.js/js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
