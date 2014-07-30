@@ -129,6 +129,13 @@ li::before {
     text-align: right;
 }
 
+#chrome-canary .canary-logo {
+    position: absolute;
+    right: 90px;
+    width: 175px;
+    bottom: 40px;
+}
+
 #disable-cache img {
     width: 100%;
 }
