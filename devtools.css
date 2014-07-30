@@ -129,6 +129,18 @@ li::before {
     text-align: right;
 }
 
+#intro .whoami {
+    position: absolute;
+    text-align: left;
+    left: 1empx;
+    bottom: 1em;
+}
+
+#intro .whoami .occupation {
+    font-size: 30px;
+
+}
+
 #chrome-canary .canary-logo {
     position: absolute;
     right: 90px;
