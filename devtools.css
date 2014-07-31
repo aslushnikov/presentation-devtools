@@ -112,6 +112,18 @@ li::before {
     width: 125px;    
 }
 
+.slide .chromepic {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 100px;
+}
+
+.slide.demo h1 {
+    padding-top: 5em;
+    text-align: center;
+}
+
 #intro {
     text-align: center;
 }

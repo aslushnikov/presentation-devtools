@@ -21,62 +21,43 @@
     </div>
 </div>
 
-<div id="agenda" class="slide step">
-    <q>Агенда</q>
+<div class="slide step">
+    <q>Направления</q>
     <ul>
-        <li>Tips'n'tricks <!-- canary, disable cache, dock to right -->
-        <li>Device mode
-        <li>Workspace
+        <li>Performance - 60FPS
+        <li>Mobile Web - Будущее
+        <li>Authoring - every day experience
     </ul>
+    <img class="chromepic" src="/chrome-logo.jpg"></img>
 </div>
+
 
 <div id="chrome-canary" class="slide step">
-    <q>Tip 1: Chrome Canary</q>
+    <q>Используйте Chrome Canary!</q>
     <ul>
-        <li>Latest & Greatest DevTools
-        <li>WebPlatform features
+        <li>Latest & Greatest Developer Tools
         <li>устанавливается параллельно с обычным хромом
     </ul>
-    <img class="canary-logo" src="canary.png"></img>
+    <img class="chromepic" src="/canary.png"></img>
 </div>
 
-<div id="disable-cache" class="slide step">
-    <q>Tip 2: Disable Cache</q>
-    <img src="devtools-disable-cache.png"></img>
-    <div class="marker"></div>
-</div>
-
-<div id="dock-to-right" class="slide step">
-    <q>Tip 3: Dock To Right</q>
-    <img src="dock-to-right.png" width="100%">
-    <div class="marker"></div>
-</div>
-
-<div id="device-mode" class="step" data-x=6000 data-y=2000 data-scale=2>
-    <img class="icon" src="device-mode-icon.png"></img>
-    <span>Device Mode</span>
-</div>
-
-<div id="mobile-world" class="slide step">
-    <q>Device mode</q>
+<div class="slide step">
+    <q>План</q>
     <ul>
-        <li>Эмуляция размеров экрана
-        <li>Эмуляция интернет-соединения
-        <li>CSS-breakpoints / Media Queries
+        <li>Device Mode (new!)
+        <li>Workspace
     </ul>
+    <img class="chromepic" src="/chrome-logo.jpg"></img>
 </div>
 
-<div id="workspace" class="step" data-x=7500 data-y=4000 data-scale=2>
-    <div class="workspace-title">Workspace</div>
+<div class="slide step demo">
+    <h1>Device Mode Demo</h1>
+    <img class="chromepic" src="/chrome-logo.jpg"></img>
 </div>
 
-<div id="workspace-summary" class="step slide">
-    <q>Workspace - это:</q>
-    <ul>
-        <li>редактор файлов
-        <li>поиск с индексированием
-        <li>умный "Goto File" диалог 
-    </ul>
+<div class="slide step demo">
+    <h1>Workspace Demo</h1>
+    <img class="chromepic" src="/chrome-logo.jpg"></img>
 </div>
 
 <div id="theend" class="step slide">
@@ -89,27 +70,12 @@
     </div>
 </div>
 
-<div id="bird-eye" class="step" data-x=5250 data-y=2000 data-scale=8>
-</div>
-
 <script>
 var slides = document.querySelectorAll(".slide");
 var x = 0;
-for (var i = 0; i < 5; ++i) {
+for (var i = 0; i < slides.length; ++i) {
     slides[i].setAttribute("data-x", x);
     slides[i].setAttribute("data-y", 0);
-    x += 1500;
-}
-
-for (var i = 5; i < 6; ++i) {
-    slides[i].setAttribute("data-x", x);
-    slides[i].setAttribute("data-y", 2000);
-    x += 1500;
-}
-
-for (var i = 6; i < slides.length; ++i) {
-    slides[i].setAttribute("data-x", x);
-    slides[i].setAttribute("data-y", 4000);
     x += 1500;
 }
 
